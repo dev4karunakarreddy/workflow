@@ -8,5 +8,7 @@ jobs:
     steps:
       - name: Step Name
         run: echo "Hello, World!"
-      - name: disk-size
-        run: lsblk
+      - name: ip address
+        run: ifconfig
+      - name: who
+        run: w
