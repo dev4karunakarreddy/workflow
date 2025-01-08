@@ -1,12 +1,10 @@
-name: Java CI/CD Pipeline
+name: Workflow
 
-on:
-  [push]
+on: [push, pull_request]
 
 jobs:
-  build:
+  job_id:
     runs-on: ubuntu-latest
-
     steps:
-      -name: hello workflow
-      run: echo "hello vrish"
+      - name: Step Name
+        run: echo "Hello, World!"
